@@ -5,11 +5,11 @@ services:
     build: ./backend
     ports:
       - "3000:3000"
-    volumes:
-      - ./backend:/app
 
   frontend:
     build: ./frontend
+    environment:
+      - BACKEND_URL_PORT=3000
     ports:
       - "80:80"
     volumes:

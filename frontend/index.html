@@ -9,7 +9,9 @@
   <h1>¡Hola Mundo desde el frontend!</h1>
   <p id="message"></p>
   <script>
-    fetch('http://backend:3000')
+      const backendUrl = 'http://localhost:3000';
+      console.log('backendUrl:', backendUrl);
+    fetch(backendUrl)
       .then(response => response.text())
       .then(message => document.getElementById('message').innerText = message)
       .catch(error => console.error('Error al obtener el mensaje desde el backend:', error));
