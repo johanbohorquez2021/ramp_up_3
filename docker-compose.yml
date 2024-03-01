@@ -7,11 +7,9 @@ services:
       - "3000:3000"
 
   frontend:
-    build: ./frontend
-    environment:
-      - BACKEND_URL_PORT=3000
+    build: ./front-angular
     ports:
-      - "80:80"
+      - "80:4200"
     volumes:
       - ./frontend:/usr/share/nginx/html
     depends_on:
