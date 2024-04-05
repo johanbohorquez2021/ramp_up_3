@@ -9,7 +9,7 @@ services:
   frontend:
     build: ./front-angular
     ports:
-      - "80:4200"
+      - "80:80"
     volumes:
       - ./frontend:/usr/share/nginx/html
     depends_on:
