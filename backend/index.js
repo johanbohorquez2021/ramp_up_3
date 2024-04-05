@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('¡Hola Mundo desde el backend!');
 });
 
