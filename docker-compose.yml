@@ -7,7 +7,7 @@ services:
       - "3000:3000"
 
   frontend:
-    build: ./front-angular
+    build: ./frontend
     ports:
       - "80:80"
     volumes:
